@@ -12,3 +12,14 @@
 #      etc.
 
 # Hint: The next number is found by adding the two numbers before it
+
+a = 1
+b = 1
+for term in range (50):
+  if term < 2:
+    print('term: {term} / number: {term}')
+  else:
+    c = a + b
+    print(f'term: {term} / number: {c}')
+    a = b
+    b = c
